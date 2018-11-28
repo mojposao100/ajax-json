@@ -89,7 +89,92 @@ Untracked files:
 nothing added to commit but untracked files present (use "git add" to track)
 
 da se prate sve promjene moramo dodati (vidi rečenicu gore) ... treba dodati datoteke koje želimo uključiti u commit
+treba dodati što sve uključujemo u commit...ako želimo sve fajle onda:
+git add .
+
+...provjera što je uključeno možemo provjeriti sa git status
+$ git status
+On branch develop
+Your branch is up-to-date with 'origin/develop'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   dist/css/style.min.css
+        new file:   git_upute.txt
+        new file:   gulpfile.js
+        new file:   img/stars.jpg
+        new file:   index.html
+        new file:   package-lock.json
+        new file:   package.json
+        new file:   src/js/app.js
+        new file:   src/scss/base/mixins.scss
+        new file:   src/scss/base/variables.scss
+        new file:   src/scss/style.scss
+
+...dodavanje git commita i napravi poruku uz commit
+$ git commit -m "Aplikacija inicijalizirana prvi puta"
+[develop 4c19570] Aplikacija inicijalizirana prvi puta
+ Committer: programer10 <programer10@ucione.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 11 files changed, 6450 insertions(+)
+ create mode 100644 dist/css/style.min.css
+ create mode 100644 git_upute.txt
+ create mode 100644 gulpfile.js
+ create mode 100644 img/stars.jpg
+ create mode 100644 index.html
+ create mode 100644 package-lock.json
+ create mode 100644 package.json
+ create mode 100644 src/js/app.js
+ create mode 100644 src/scss/base/mixins.scss
+ create mode 100644 src/scss/base/variables.scss
+ create mode 100644 src/scss/style.scss
+ 
+ ....ovo je još uvijek sve lokalno . sa git push stavljamo taj commit na cloud repozitorij
+ $ git status
+On branch develop
+Your branch is ahead of 'origin/develop' by 1 commit.
+  (use "git push" to publish your local commits)
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   git_upute.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+..napravimo push gdje će nas tražiti username i password za github
+
+programer10@MAX05-03 MINGW64 /d/Podaci/programer10/Documents/HTML5_vjezbe/JavaScript/ajax-json (develop)
+$ git push
+fatal: AggregateException encountered.
+   One or more errors occurred.
+Username for 'https://github.com': mojposao100
+Counting objects: 20, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (16/16), done.
+Writing objects: 100% (20/20), 507.28 KiB | 0 bytes/s, done.
+Total 20 (delta 0), reused 0 (delta 0)
+To https://github.com/mojposao100/ajax-json.git
+   dde0acb..4c19570  develop -> develop
+
+programer10@MAX05-03 MINGW64 /d/Podaci/programer10/Documents/HTML5_vjezbe/JavaScript/ajax-json (develop)
+
+...e sada pogledaj što imaš na web repozitoriju...trebale bi biti sve mape i datoteke osim node_modules mape što i želimo
+pogleda i što imaš pod mapu master (ostalo je isto jer smo još u razvoju aplikacije)
 
 
 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ODLIČNA knjiga o githubu : https://tkrajina.github.io/uvod-u-git/git.pdf

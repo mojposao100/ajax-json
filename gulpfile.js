@@ -45,7 +45,7 @@ function scripts(){
 		return (
 		gulp
 			.src(paths.js.src)
-			.pipe(uglify)
+			.pipe(uglify())
 			.pipe(rename({
 				suffix: '.min'
 			}))

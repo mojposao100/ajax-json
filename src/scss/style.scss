@@ -1,0 +1,181 @@
+/*####### MAIN STYLES ######*/
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import 'base/variables.scss';
+@import 'base/mixins.scss';
+
+*, *:before, *:after{
+  box-sizing: $box-sizing;
+}
+
+html{
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+}
+
+body{
+  margin: 0;
+  background: $light;
+}
+
+.header{
+  position: relative;
+  background: url(../../img/stars.jpg) no-repeat center center;
+  background-size: cover;
+  height: 800px;
+  text-align:center;
+  
+  @media screen and (max-width: 980px){
+      height: 400px;
+    }
+  
+  .header-inner{
+    width: 100%;
+    max-width: 800px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+    @media screen and (max-width: 980px){
+      max-width: 320px;
+    }
+  }
+  
+  h1{
+    font-size: 3rem;
+    color: $light;
+    margin:0 0 20px;
+    text-shadow: 1px 1px 5px $dark;
+    
+    @media screen and (max-width: 980px){
+      font-size: 2.675rem;
+    }
+  }
+  
+  a{
+    display: block;
+    background: $light;
+    max-width: 200px;
+    margin: auto;
+    padding: $padding;
+    border-bottom: solid 5px $blue;
+    text-decoration: none;
+    color: $dark;
+    font-size: 1.5rem;
+    transition: all 1s;
+    
+      &:hover{
+        background: $dark;
+        color: $light;
+        border-bottom: solid 5px $red;
+      }
+  }
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: transparent;
+  padding: $padding * 3 $padding - 0.2;
+  transition: 0.4s;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+  
+  a {
+    float: left;
+    display:block;
+    color: $light;
+    text-align: center;
+    padding: $padding - 0.5 0;
+    margin: $margin;
+    text-decoration: none;
+    font-size: 1.25rem; 
+    line-height: 1.5rem;
+    position: relative;
+    
+    span{
+      display: block;
+      position: absolute;
+      height: 3px;
+      width: 100%;
+      background: transparent;
+      transition: all 1s;
+      bottom: 0;
+    }
+    
+    &:hover, &.active{
+      span{
+        background: $blue;
+      }
+    }
+  }
+  
+  .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    transition: 0.4s;
+  }
+  
+  .navbar-right {
+    float: right;
+  }
+}
+
+.container{
+  width: $container-fluid;
+  max-width: $container;
+  
+  @media screen and (max-width: 1300px){
+    max-width: $container - 320;
+  }
+  @media screen and (max-width: 980px){
+    max-width: $container - 520;
+  }
+  
+  margin: auto;
+  padding: 0 $padding;
+  
+  .row{
+    margin-left: -$margin;
+    margin-right: -$margin;
+    
+    @for $col from 1 through 12{
+      .col-#{$col}{
+        width: 8.333333%  * $col;
+      }
+    }
+    
+    [class*="col-"]{
+      float: left;
+      padding: $padding;
+    }
+    
+    @media screen and (max-width: 1300px){
+      @for $col from 1 through 12{
+        .col-md-#{$col}{
+          width: 8.333333%  * $col;
+        }
+      }
+    }
+    @media screen and (max-width: 980px){
+      @for $col from 1 through 12{
+        .col-sm-#{$col}{
+          width: 8.333333%  * $col;
+        }
+      }
+    }
+  } 
+}
+
+
+
+
+
+
+
+
+
+
+
+

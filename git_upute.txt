@@ -1,0 +1,95 @@
+programer10@MAX05-03 MINGW64 /d/Podaci/programer10/Documents/HTML5_vjezbe/JavaScript
+$ ls
+ajax-json/  dan3/                       DOM_manipulation/             stil.css
+dan1/       dan5_dorada_CCS_5tog_dana/  osnovna_struktura_html5.html
+dan2/       dan6/                       script.js
+
+programer10@MAX05-03 MINGW64 /d/Podaci/programer10/Documents/HTML5_vjezbe/JavaScript
+$ cd ajax-json/
+
+programer10@MAX05-03 MINGW64 /d/Podaci/programer10/Documents/HTML5_vjezbe/JavaScript/ajax-json (master)
+$
+
+
+programer10@MAX05-03 MINGW64 /d/Podaci/programer10/Documents/HTML5_vjezbe/JavaScript/ajax-json (master)
+$
+
+programer10@MAX05-03 MINGW64 /d/Podaci/programer10/Documents/HTML5_vjezbe/JavaScript/ajax-json (master)
+$ git remote -v
+origin  https://github.com/mojposao100/ajax-json.git (fetch)
+origin  https://github.com/mojposao100/ajax-json.git (push)
+
+programer10@MAX05-03 MINGW64 /d/Podaci/programer10/Documents/HTML5_vjezbe/JavaScript/ajax-json (master)
+$ git branch -a
+* master
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/master
+
+programer10@MAX05-03 MINGW64 /d/Podaci/programer10/Documents/HTML5_vjezbe/JavaScript/ajax-json (master)
+$ git branch -a -r
+  origin/HEAD -> origin/master
+  origin/master
+
+programer10@MAX05-03 MINGW64 /d/Podaci/programer10/Documents/HTML5_vjezbe/JavaScript/ajax-json (master)
+$ git fatch
+git: 'fatch' is not a git command. See 'git --help'.
+
+Did you mean this?
+        fetch
+
+programer10@MAX05-03 MINGW64 /d/Podaci/programer10/Documents/HTML5_vjezbe/JavaScript/ajax-json (master)
+$ git fetch
+From https://github.com/mojposao100/ajax-json
+ * [new branch]      develop    -> origin/develop
+
+programer10@MAX05-03 MINGW64 /d/Podaci/programer10/Documents/HTML5_vjezbe/JavaScript/ajax-json (master)
+$ git branch -a
+* master
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/develop
+  remotes/origin/master
+
+programer10@MAX05-03 MINGW64 /d/Podaci/programer10/Documents/HTML5_vjezbe/JavaScript/ajax-json (master)
+$ git checkout develop
+Branch develop set up to track remote branch develop from origin.
+Switched to a new branch 'develop'
+
+programer10@MAX05-03 MINGW64 /d/Podaci/programer10/Documents/HTML5_vjezbe/JavaScript/ajax-json (develop)
+$ git pull
+Already up-to-date.
+
+programer10@MAX05-03 MINGW64 /d/Podaci/programer10/Documents/HTML5_vjezbe/JavaScript/ajax-json (develop)
+$
+
+programer10@MAX05-03 MINGW64 /d/Podaci/programer10/Documents/HTML5_vjezbe/JavaScript/ajax-json (develop)
+$
+
+programer10@MAX05-03 MINGW64 /d/Podaci/programer10/Documents/HTML5_vjezbe/JavaScript/ajax-json (develop)
+$
+
+programer10@MAX05-03 MINGW64 /d/Podaci/programer10/Documents/HTML5_vjezbe/JavaScript/ajax-json (develop)
+$ npm install
+
+provjera stausa sada ... primjeti da ignorira fajlu node_modules jer smo tako postavili na git repozitoriju
+$ git status
+On branch develop
+Your branch is up-to-date with 'origin/develop'.
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        dist/
+        git_upute.txt
+        gulpfile.js
+        img/
+        index.html
+        package-lock.json
+        package.json
+        src/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+da se prate sve promjene moramo dodati (vidi rečenicu gore) ... treba dodati datoteke koje želimo uključiti u commit
+
+
+
+ODLIČNA knjiga o githubu : https://tkrajina.github.io/uvod-u-git/git.pdf

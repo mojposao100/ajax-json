@@ -1,0 +1,63 @@
+﻿<!doctype html>
+<html lang="hr">
+	<head>
+		<meta charset="utf-8" />
+		<title>Osnovne SASS-a</title>
+    <meta name="viewport" content="width=device-width">
+		<link href="dist/css/style.min.css" rel="stylesheet">	
+	</head>
+	<body>
+    <nav class="navbar">
+      <a href="#default" class="logo">CompanyLogo</a>
+      <div class="navbar-right">
+        <a class="active" href="#home">Home <span></span></a>
+        <a href="#contact">Contact <span></span></a>
+        <a href="#about">About <span></span></a>
+      </div>
+    </nav>
+    <header class="header">
+      <div class="header-inner">
+        <h1>To the stars and beyond!</h1>
+        <a href="#">Go Explore</a>
+      </div>
+    </header>
+    <div class="container">
+      <div class="row">
+        <div class="col-3 col-md-6 col-sm-12">
+          <div class="card">
+            <h2>Osnove SASS-a</h2>
+            <p>Curabitur ullamcorper justo dictum ex mollis, in ultricies libero finibus. Praesent vestibulum bibendum justo, sit amet vestibulum libero vulputate quis. Vivamus eros mi, vehicula id viverra at, luctus at nunc. Nullam lacus justo, consequat quis pulvinar quis, sagittis ut tortor. Praesent blandit libero ut nunc blandit maximus. Sed id arcu fermentum, ultrices dui quis, molestie felis. Mauris eleifend, magna vulputate efficitur mattis, quam urna feugiat est, bibendum accumsan sem justo et risus. Maecenas aliquam nunc sem, ut condimentum elit dictum nec.</p>
+          </div>
+        </div>
+        <div class="col-3 col-md-6 col-sm-12">
+          <div class="card">
+            <h2>Osnove GULP-a</h2>
+            <p>Maecenas eget metus in mi porta commodo ac id lacus. Praesent ac ultricies arcu. Cras sollicitudin lacus at faucibus imperdiet. Vestibulum lacinia odio quis massa auctor dictum sit amet vel eros. Pellentesque sed nibh sem. Etiam sed porttitor lectus. Integer placerat enim non augue porttitor rutrum. Maecenas feugiat ante augue, a pellentesque libero molestie vel. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In lorem lectus, malesuada ornare aliquet non, mattis ac tortor. Fusce in luctus magna. Integer id convallis est.</p>
+          </div>
+        </div>
+        <div class="col-3 col-md-6 col-sm-12">
+          <div class="card">
+            <h2>Osnove GULP-a</h2>
+            <p>Maecenas eget metus in mi porta commodo ac id lacus. Praesent ac ultricies arcu. Cras sollicitudin lacus at faucibus imperdiet. Vestibulum lacinia odio quis massa auctor dictum sit amet vel eros. Pellentesque sed nibh sem. Etiam sed porttitor lectus. Integer placerat enim non augue porttitor rutrum. Maecenas feugiat ante augue, a pellentesque libero molestie vel. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In lorem lectus, malesuada ornare aliquet non, mattis ac tortor. Fusce in luctus magna. Integer id convallis est.</p>
+          </div>
+        </div>
+        <div class="col-3 col-md-6 col-sm-12">
+          <div class="card">
+            <h2>Osnove GULP-a</h2>
+            <p>Maecenas eget metus in mi porta commodo ac id lacus. Praesent ac ultricies arcu. Cras sollicitudin lacus at faucibus imperdiet. Vestibulum lacinia odio quis massa auctor dictum sit amet vel eros. Pellentesque sed nibh sem. Etiam sed porttitor lectus. Integer placerat enim non augue porttitor rutrum. Maecenas feugiat ante augue, a pellentesque libero molestie vel. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In lorem lectus, malesuada ornare aliquet non, mattis ac tortor. Fusce in luctus magna. Integer id convallis est.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+	 <!-- JS Scripts -->
+        <script src="node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="dist/js/app.min.js"></script>
+        <script>
+		<!-- minimum -->
+            $(function () { <!-- skraćeno pozivanje callback funkcije umjesto načina $(document).ready ...-->
+                App.init($('.navbar')); <!-- ovim pozivamo u app.js fajli funkciju App init:function(element){}-->
+            });							<!-- ...i prosljedujemo element = navbar-->
+        </script>
+	
+	</body>
+</html>

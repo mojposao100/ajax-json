@@ -1,4 +1,4 @@
-programer10@MAX05-03 MINGW64 /d/Podaci/programer10/Documents/HTML5_vjezbe/JavaScript
+﻿programer10@MAX05-03 MINGW64 /d/Podaci/programer10/Documents/HTML5_vjezbe/JavaScript
 $ ls
 ajax-json/  dan3/                       DOM_manipulation/             stil.css
 dan1/       dan5_dorada_CCS_5tog_dana/  osnovna_struktura_html5.html
@@ -173,6 +173,61 @@ programer10@MAX05-03 MINGW64 /d/Podaci/programer10/Documents/HTML5_vjezbe/JavaSc
 ...e sada pogledaj što imaš na web repozitoriju...trebale bi biti sve mape i datoteke osim node_modules mape što i želimo
 pogleda i što imaš pod mapu master (ostalo je isto jer smo još u razvoju aplikacije)
 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+tri naredbe za zapamtiti za gitiranje
+
+programer10@MAX05-03 MINGW64 /d/Podaci/programer10/Documents/HTML5_vjezbe/JavaSc                                                                                                                                                                                               ript/ajax-json (develop)
+$ git add .
+warning: LF will be replaced by CRLF in dist/css/style.min.css.
+The file will have its original line endings in your working directory.
+
+programer10@MAX05-03 MINGW64 /d/Podaci/programer10/Documents/HTML5_vjezbe/JavaSc                                                                                                                                                                                               ript/ajax-json (develop)
+$ git commit -m "AJAX ali APP.js ne radi"
+[develop 85bc16f] AJAX ali APP.js ne radi
+ Committer: programer10 <programer10@ucione.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 9 files changed, 224 insertions(+), 266 deletions(-)
+ create mode 100644 data/users.json
+ rewrite dist/css/style.min.css (96%)
+ create mode 100644 dist/js/app.min.js
+ create mode 100644 img/ajax-loader.gif
+ rewrite index.html (90%)
+ rewrite src/js/app.js (72%)
+ rewrite src/scss/style.scss (89%)
+
+programer10@MAX05-03 MINGW64 /d/Podaci/programer10/Documents/HTML5_vjezbe/JavaSc                                                                                                                                                                                               ript/ajax-json (develop)
+$ git push
+fatal: AggregateException encountered.
+   One or more errors occurred.
+Username for 'https://github.com': mojposao100
+Counting objects: 19, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (15/15), done.
+Writing objects: 100% (19/19), 8.22 KiB | 0 bytes/s, done.
+Total 19 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/mojposao100/ajax-json.git
+   4c19570..85bc16f  develop -> develop
+
+programer10@MAX05-03 MINGW64 /d/Podaci/programer10/Documents/HTML5_vjezbe/JavaSc                                                                                                                                                                                               ript/ajax-json (develop)
+$ git status
+On branch develop
+Your branch is up-to-date with 'origin/develop'.
+nothing to commit, working tree clean
+
+programer10@MAX05-03 MINGW64 /d/Podaci/programer10/Documents/HTML5_vjezbe/JavaSc                                                                                                                                                                                               ript/ajax-json (develop)
+$
 
 
 
